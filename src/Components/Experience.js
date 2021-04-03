@@ -18,7 +18,7 @@ export default function Experience() {
       cardDetailedText: "Worked as a freelance back-end developer and converted the entire database dependent system to database independent system using JPA and Hibernate Stack."
     },
     {
-      date: "June 2019 – July 20190",
+      date: "June 2019 – July 2019",
       cardTitle: "Fox Domotics Private Limited",
       cardSubtitle: "Machine Learning Intern",
       cardDetailedText: "Worked on Google play apps analytics. Applied Knowledge Data Discovery on the dataset and provided the company with various insights."
