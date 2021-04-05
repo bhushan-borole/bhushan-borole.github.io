@@ -53,6 +53,7 @@ export default function Hero() {
                   </Button>
               </Col>
               <Col lg={6}>
+                  <br/>
                   <img src={ img } height="100%" width="95%" style={{ borderRadius: "30px" }} />
               </Col>
           </Row>
