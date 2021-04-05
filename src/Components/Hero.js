@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from '@material-ui/core/Button';
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 export default function Hero() {
   return (
@@ -37,9 +38,19 @@ export default function Hero() {
                       <a href="https://www.linkedin.com/in/bhushan-borole/"><i class="bx bxl-linkedin"></i></a>
                       <a href="mailto:borolebhushan8@gmail.com"><i class="bx bx-envelope"></i></a>
                   </div>
-                  <Button 
-                    href=""
-                  ></Button>
+                  <br />
+                  <Button
+                    variant="outlined"
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1-twuNHs99vilJ_SPAcnZDjtD5QjC59WG/view?usp=sharing"
+                    startIcon={<CloudDownloadIcon />}
+                    style={{ 
+                      color: "rgb(116, 128, 138)",
+                      borderColor: "rgb(116, 128, 138)"
+                    }}
+                  >
+                    Download Resume
+                  </Button>
               </Col>
               <Col lg={6}>
                   <img src={ img } height="100%" width="95%" style={{ borderRadius: "30px" }} />
