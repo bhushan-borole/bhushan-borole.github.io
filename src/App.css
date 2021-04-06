@@ -248,6 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-active #header {
   left: 0;
+  background: rgba(46, 45, 43, 1);
 }
 
 .mobile-nav-active .mobile-nav-toggle {
