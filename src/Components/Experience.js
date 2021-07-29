@@ -6,7 +6,7 @@ export default function Experience() {
 
   const items = [
     {
-      date: "November 2020 – February 2020",
+      date: "November 2020 – February 2021",
       cardTitle: "Mobisy Technologies",
       cardSubtitle: "R & D Intern",
       cardDetailedText: "Working as a Research and Development intern and helping the company reach its goals using NLP and Machine Learning."
