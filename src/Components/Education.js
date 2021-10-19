@@ -11,25 +11,25 @@ const Education = () => {
         {
             cardTitle: "Trinity College Dublin",
             cardSubtitle: "MSc - Intelligent Systems",
+            coursesHead: "Courses: ",
+            cardDetailedText: [
+                "Machine Learning",
+                "Information Retrieval and Web Search",
+                "Data Analytics",
+                "Knowledge and Data Engineering",
+                "Advanced Software Engineering",
+                "Artificial Intelligence",
+                "Text Analytics",
+            ].map(function (course) {
+                return <li>{course}</li>;
+            }),
             date: "2021 - present",
         },
         {
             cardTitle: "St. Francis Institute Of Technology",
             cardSubtitle: "BE in Computer Engineering",
-            cardDetailedText: "CGPA: 8.72",
+            cardDetailedText: "CGPA: 8.72 (First class with Distinction)",
             date: "2016 - 2020",
-        },
-        {
-            cardTitle: "Pace Jr. Science College",
-            cardSubtitle: "12th",
-            cardDetailedText: "CGPA: 86%",
-            date: "2014 - 2016",
-        },
-        {
-            cardTitle: "Gundecha Education Academy",
-            cardSubtitle: "10th",
-            cardDetailedText: "CGPA: 92.5%",
-            date: "2014",
         },
     ];
 
@@ -75,11 +75,29 @@ const Education = () => {
                                             fontSize: "1.2em",
                                             fontWeight: "350",
                                             color: "#7e8890",
+                                            marginTop: "5px",
                                         }}
                                     >
                                         {data.cardSubtitle}
                                     </h4>
-                                    <p style={{ color: "#74808a" }}>
+                                    <h5
+                                        className="vertical-timeline-element-subtitle"
+                                        style={{
+                                            fontSize: "1em",
+                                            fontWeight: "250",
+                                            color: "#7e8890",
+                                            marginTop: "5px",
+                                        }}
+                                    >
+                                        {data.coursesHead}
+                                    </h5>
+                                    <p
+                                        style={{
+                                            fontSize: "1em",
+                                            fontWeight: "350",
+                                            color: "#74808a",
+                                        }}
+                                    >
                                         {data.cardDetailedText}
                                     </p>
                                 </VerticalTimelineElement>
