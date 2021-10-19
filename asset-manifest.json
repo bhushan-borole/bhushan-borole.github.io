@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.4d9f93ff.chunk.css",
-    "main.js": "/static/js/main.f06f2611.chunk.js",
-    "main.js.map": "/static/js/main.f06f2611.chunk.js.map",
+    "main.js": "/static/js/main.f6ef548e.chunk.js",
+    "main.js.map": "/static/js/main.f6ef548e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fab4d04e.js",
     "runtime-main.js.map": "/static/js/runtime-main.fab4d04e.js.map",
     "static/css/2.1adbd208.chunk.css": "/static/css/2.1adbd208.chunk.css",
@@ -14,8 +14,8 @@
     "static/css/2.1adbd208.chunk.css.map": "/static/css/2.1adbd208.chunk.css.map",
     "static/css/main.4d9f93ff.chunk.css.map": "/static/css/main.4d9f93ff.chunk.css.map",
     "static/js/2.50583ce6.chunk.js.LICENSE.txt": "/static/js/2.50583ce6.chunk.js.LICENSE.txt",
+    "static/media/bhushan-photo.0f987e8d.jpeg": "/static/media/bhushan-photo.0f987e8d.jpeg",
     "static/media/bhushan.226dec43.jpg": "/static/media/bhushan.226dec43.jpg",
-    "static/media/bhushan.e2da897d.jpeg": "/static/media/bhushan.e2da897d.jpeg",
     "static/media/bootstrap-icons.css": "/static/media/bootstrap-icons.7d38a258.woff",
     "static/media/boxicons.min.css": "/static/media/boxicons.cbd149c5.ttf",
     "static/media/google_assistant.5421e7b9.png": "/static/media/google_assistant.5421e7b9.png",
@@ -28,6 +28,6 @@
     "static/css/2.1adbd208.chunk.css",
     "static/js/2.50583ce6.chunk.js",
     "static/css/main.4d9f93ff.chunk.css",
-    "static/js/main.f06f2611.chunk.js"
+    "static/js/main.f6ef548e.chunk.js"
   ]
 }
