@@ -26,8 +26,6 @@ function Contact() {
     setOpen(true);
     setEmail("");
     setMessage("");
-
-    setTimeout(setOpen(false), 2000);
   };
 
   return (
