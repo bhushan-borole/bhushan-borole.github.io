@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color:  rgba(46, 45, 43, 1);
+  background-color: rgba(46, 45, 43, 1);
 }
 
 a {
@@ -23,7 +23,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -202,21 +207,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu li:hover > a {
   color: #fff;
   background: #0563bb;
 }
 
-.nav-menu a:hover span, .nav-menu .active span, .nav-menu li:hover > a span {
+.nav-menu a:hover span,
+.nav-menu .active span,
+.nav-menu li:hover > a span {
   color: #fff;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu li:hover > a {
   width: 100%;
   color: #fff;
 }
 
-.nav-menu a:hover span, .nav-menu li:hover > a span {
+.nav-menu a:hover span,
+.nav-menu li:hover > a span {
   display: block;
 }
 /**
@@ -350,9 +361,9 @@ section {
   padding-bottom: 30px;
 }
 
-.background-alt{
-    /*background:#f2f2f5*/
-    background: #2e2d2b;
+.background-alt {
+  /*background:#f2f2f5*/
+  background: #2e2d2b;
 }
 
 .section-title h2 {
@@ -362,11 +373,11 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: rgba(255, 255, 255, 0.8)
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .section-title h2::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 120px;
@@ -377,7 +388,7 @@ section {
 }
 
 .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 40px;
@@ -389,7 +400,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  color: #98a6ad
+  color: #98a6ad;
 }
 
 /*--------------------------------------------------------------
@@ -507,31 +518,31 @@ section {
   background-color: #0563bb;
 } */
 
-#skills{
-  padding:50px 15px;
-  text-align:center
+#skills {
+  padding: 50px 15px;
+  text-align: center;
 }
-#skills h2{
+#skills h2 {
   /*color:#374054;*/
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom:50px
+  margin-bottom: 50px;
 }
-#skills ul{
-  display:block;
-  margin:0 auto;
-  padding:0;
-  max-width:800px
+#skills ul {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
 }
-#skills li{
-  display:inline-block;
-  margin:7px;
-  padding:5px 10px;
+#skills li {
+  display: inline-block;
+  margin: 7px;
+  padding: 5px 10px;
   /*color:#374054;*/
   color: rgba(255, 255, 255, 0.8);
-  background:#343a40;
-  list-style:none;
-  cursor:default;
-  font-size:1.2em
+  background: #343a40;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
 }
 
 .vertical-timeline.vertical-timeline-custom-line::before {
@@ -544,36 +555,125 @@ section {
 }
 
 .projects-technologies {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 .projects-technologies > * {
-    margin-right: 5px;
-    margin-bottom: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .projects-technologies > * > * {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 .project-links {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project-links > * {
-    margin-right: 10px !important;
+  margin-right: 10px !important;
 }
 
-
 @media only screen and (max-width: 480px) {
-    .ResumeProjectsBlock-links > * {
-        width: 100%;
-        margin: 5px 0;
-    }
+  .ResumeProjectsBlock-links > * {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+#contact {
+  padding: 50px 15px;
+  /* background: #3498db; */
+  text-align: center;
+}
+#contact h2 {
+  margin: 0 0 15px 0;
+  color: #fff;
+  font-weight: 500;
+}
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#contact-form input,
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+  background: rgb(126, 136, 144); /*#1d6fa5;*/
+  color: #fff;
+  transition: 0.5s ease all;
+}
+#contact-form input::-webkit-input-placeholder,
+#contact-form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+#contact-form input:-moz-placeholder,
+#contact-form textarea:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+#contact-form input::-moz-placeholder,
+#contact-form textarea::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+#contact-form input:-ms-input-placeholder,
+#contact-form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  background: #16527a;
+}
+#contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+#contact-form button {
+  display: block;
+  width: 100%;
+  background: rgb(5, 99, 187);
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 0.5s ease all;
+}
+#contact-form button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -612,7 +712,7 @@ section {
   display: inline-block;
   /* background: #0563bb; */
   /* color: #fff; */
-  color:#74808a;
+  color: #74808a;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -624,7 +724,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  color:#3498db
+  color: #3498db;
 }
 
 #footer .copyright {
@@ -633,5 +733,5 @@ section {
 
 #footer .credits {
   font-size: 18px;
-  color: "#fff"
+  color: "#fff";
 }
