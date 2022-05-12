@@ -440,6 +440,19 @@ section {
   color: #728394;
 }
 
+.about a:link {
+  text-decoration: none;
+}
+.about a:visited {
+  text-decoration: none;
+}
+.about a:hover {
+  text-decoration: underline;
+}
+.about a:active {
+  text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -611,7 +624,7 @@ section {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: rgb(126, 136, 144); /*#1d6fa5;*/
+  background: #343a40; /*rgb(126, 136, 144); /*#1d6fa5;*/
   color: #fff;
   transition: 0.5s ease all;
 }
@@ -636,7 +649,7 @@ section {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  background: #16527a;
+  background: rgb(126, 136, 144); /*#16527a;*/
 }
 #contact-form textarea {
   height: 150px;
