@@ -658,6 +658,11 @@ section {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+#contact-form button:disabled {
+  background: rgb(126, 136, 144);
+  cursor: not-allowed;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);

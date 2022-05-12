@@ -7,11 +7,13 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [open, setOpen] = useState(false);
+  const [disable, setDisable] = useState(false);
 
   //   const notify = () => toast.success("Here is your toast.");
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    setDisable(true);
     await fetch(FORMSPARK_URL, {
       method: "POST",
       headers: {
@@ -26,6 +28,7 @@ function Contact() {
     setOpen(true);
     setEmail("");
     setMessage("");
+    setTimeout(setDisable(false), 2000);
   };
 
   return (
@@ -56,7 +59,9 @@ function Contact() {
               onChange={(e) => setMessage(e.target.value)}
               required
             ></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={disable}>
+              Submit
+            </button>
           </form>
         </div>
       </div>
