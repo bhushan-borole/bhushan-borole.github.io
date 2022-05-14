@@ -40,7 +40,7 @@ export default function Hero() {
               <a href="https://www.youtube.com/channel/UC8TXgNmZW2hMis074yGOTUQ">
                 <i class="bx bxl-youtube"></i>
               </a>
-              <a href="https://www.instagram.com/bhushan_2698/">
+              <a href="https://www.instagram.com/bhushan_borole_/">
                 <i class="bx bxl-instagram"></i>
               </a>
               <a href="https://github.com/bhushan-borole">
