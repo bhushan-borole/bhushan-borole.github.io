@@ -30,7 +30,7 @@ export default function About() {
             </p>
             <br></br>
             <p style={{ color: "#728394" }}>
-              Always seeking challenging position in and Organization where my
+              Always seeking challenging position in and organization where my
               skills find ample of oppurtunities for upgradation and growth of
               the company.
             </p>
@@ -57,7 +57,9 @@ export default function About() {
                   <li>
                     <i class="bi bi-chevron-right"></i> <strong>Email:</strong>{" "}
                     <span>
-                      <a href="mailto:boroleb@tcd.ie">boroleb@tcd.ie</a>
+                      <a href="mailto:borolebhushan8@gmail.com">
+                        borolebhushan8@gmail.com
+                      </a>
                     </span>
                   </li>
                 </ul>
