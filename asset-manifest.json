@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.ca580d6a.chunk.css",
-    "main.js": "/static/js/main.e8f55a78.chunk.js",
-    "main.js.map": "/static/js/main.e8f55a78.chunk.js.map",
+    "main.js": "/static/js/main.6ad7f6df.chunk.js",
+    "main.js.map": "/static/js/main.6ad7f6df.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.10a80ca7.js",
     "runtime-main.js.map": "/static/js/runtime-main.10a80ca7.js.map",
     "static/css/2.1adbd208.chunk.css": "/static/css/2.1adbd208.chunk.css",
@@ -14,7 +14,7 @@
     "static/css/2.1adbd208.chunk.css.map": "/static/css/2.1adbd208.chunk.css.map",
     "static/css/main.ca580d6a.chunk.css.map": "/static/css/main.ca580d6a.chunk.css.map",
     "static/js/2.fdf0f454.chunk.js.LICENSE.txt": "/static/js/2.fdf0f454.chunk.js.LICENSE.txt",
-    "static/media/bhushan6.b5d5d84c.jpeg": "/static/media/bhushan6.b5d5d84c.jpeg",
+    "static/media/1.a661b48b.jpg": "/static/media/1.a661b48b.jpg",
     "static/media/bhushan_2.72ec3b24.jpeg": "/static/media/bhushan_2.72ec3b24.jpeg",
     "static/media/bootstrap-icons.css": "/static/media/bootstrap-icons.7d38a258.woff",
     "static/media/boxicons.min.css": "/static/media/boxicons.cbd149c5.ttf",
@@ -28,6 +28,6 @@
     "static/css/2.1adbd208.chunk.css",
     "static/js/2.fdf0f454.chunk.js",
     "static/css/main.ca580d6a.chunk.css",
-    "static/js/main.e8f55a78.chunk.js"
+    "static/js/main.6ad7f6df.chunk.js"
   ]
 }
