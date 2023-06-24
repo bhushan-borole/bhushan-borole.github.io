@@ -11,11 +11,12 @@ export default function Experience() {
       date: "September 2022 - Present",
       cardTitle: "Microsoft",
       cardSubtitle: "Software Engineer",
-      // cardDetailedText: [
-      //   "Developing new security detections and platform empowering service teams.",
-      // ].map(function (text) {
-      //   return <li>{text}</li>;
-      // }),
+      cardDetailedText: [
+        "Developing automated systems that detect security issues and manage workflows across Azure Identity services on a global scale.",
+        "Implement privacy-enhancing technologies to ensure compliance with applicable privacy laws and regulations.",
+      ].map(function (text) {
+        return <li>{text}</li>;
+      }),
     },
     {
       date: "November 2020 – February 2021",
