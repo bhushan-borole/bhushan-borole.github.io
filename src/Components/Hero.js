@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="hero-grid">
           <div className="reveal">
             <h1>
-              Hey, I'm <span className="grad">Bhushan</span>
+              Bhushan <span className="grad">Borole</span>
             </h1>
             <div className="role">Software Engineer</div>
             <p className="bio">
