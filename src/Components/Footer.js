@@ -1,37 +1,20 @@
-const Footer = () => {
+import Icon from "./Icon";
+
+export default function Footer() {
   return (
-    <footer id="footer">
-      <div class="container">
-        <div class="social-links">
-          <a href="https://twitter.com/bhushanborole26" class="twitter">
-            <i class="bx bxl-twitter"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/bhushan_borole_/"
-            class="instagram"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-          <a href="https://github.com/bhushan-borole" class="google-plus">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/bhushan-borole/"
-            class="linkedin"
-          >
-            <i class="bx bxl-linkedin"></i>
-          </a>
-          <a href="mailto:borolebhushan8@gmail.com">
-            <i class="bx bx-envelope"></i>
-          </a>
+    <footer>
+      <div className="container">
+        <div className="socials">
+          <a href="https://github.com/bhushan-borole" target="_blank" rel="noreferrer" aria-label="GitHub"><Icon name="github" /></a>
+          <a href="https://www.linkedin.com/in/bhushan-borole/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Icon name="linkedin" /></a>
+          <a href="https://twitter.com/bhushanborole26" target="_blank" rel="noreferrer" aria-label="Twitter"><Icon name="twitter" /></a>
+          <a href="https://www.instagram.com/bhushan_borole_/" target="_blank" rel="noreferrer" aria-label="Instagram"><Icon name="instagram" /></a>
+          <a href="mailto:borolebhushan8@gmail.com" aria-label="Email"><Icon name="mail" /></a>
         </div>
-        <div class="credits" style={{ color: "#74808a" }}>
-          Made with <span style={{ color: "#e25555" }}>&hearts;</span> using
-          React
+        <div className="credits">
+          Crafted with <span className="heart">♥</span> · React · &copy; {new Date().getFullYear()} Bhushan Borole
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

@@ -1,84 +1,72 @@
-import React, { useState, useEffect } from "react";
-import SnackBar from "my-react-snackbar";
+import { useState } from "react";
+import Icon from "./Icon";
 
 const FORMSPARK_URL = "https://submit-form.com/CARCkqSD";
 
-function Contact() {
-  const [message, setMessage] = useState("");
+export default function Contact() {
   const [email, setEmail] = useState("");
-  const [open, setOpen] = useState(false);
-  const [disable, setDisable] = useState(false);
-
-  //   const notify = () => toast.success("Here is your toast.");
+  const [message, setMessage] = useState("");
+  const [sending, setSending] = useState(false);
+  const [toast, setToast] = useState(false);
+  const [error, setError] = useState("");
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    setDisable(true);
-    await fetch(FORMSPARK_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        message,
-      }),
-    });
-    setOpen(true);
-    setEmail("");
-    setMessage("");
-    setTimeout(setDisable(false), 2000);
+    setSending(true);
+    setError("");
+    try {
+      const res = await fetch(FORMSPARK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ email, message }),
+      });
+      if (!res.ok) throw new Error("Failed");
+      setEmail("");
+      setMessage("");
+      setToast(true);
+      setTimeout(() => setToast(false), 3000);
+    } catch (err) {
+      setError("Something went wrong. Try emailing directly.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
-    <section id="contact" class="contact section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2 style={{ fontWeight: "bold", color: "rgba(255, 255, 255, 0.8)" }}>
-            Get in Touch
-          </h2>
+    <section id="contact">
+      <div className="container">
+        <div className="section-head reveal">
+          <div className="eyebrow">06 — Say hi</div>
+          <h2>Get in touch</h2>
+          <div className="underline" />
         </div>
-        <div id="contact-form">
-          <form onSubmit={onSubmit}>
+        <div className="contact-card reveal">
+          <p>
+            Open to interesting collaborations, side projects, or just a chat about
+            distributed systems, security, music — or all three. Drop a message.
+          </p>
+          <form className="contact-form" onSubmit={onSubmit}>
             <input
-              id="email"
               type="email"
-              name="email"
-              placeholder="Email"
+              placeholder="your@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <textarea
-              id="message"
-              type="text"
-              name="message"
-              placeholder="Message"
+              placeholder="What's on your mind?"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-            ></textarea>
-            <button type="submit" disabled={disable}>
-              Submit
+            />
+            {error && <div style={{ color: "#ff6b8b", fontSize: 14 }}>{error}</div>}
+            <button type="submit" className="btn btn-primary" disabled={sending}>
+              {sending ? "Sending…" : <>Send message <Icon name="arrow" size={16} /></>}
             </button>
           </form>
         </div>
       </div>
-      <SnackBar
-        open={open}
-        message={"Your Message is sent!"}
-        position="bottom-left"
-        type="success"
-        yesLabel="Ok"
-        timeout={2000}
-        onYes={() => {
-          setOpen(false);
-        }}
-        closeOnClick={true}
-      />
+      <div className={`toast ${toast ? "show" : ""}`}>✓ Message sent — talk soon!</div>
     </section>
   );
 }
-
-export default Contact;

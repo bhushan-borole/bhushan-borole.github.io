@@ -1,113 +1,67 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import WorkIcon from "@material-ui/icons/Work";
+const items = [
+  {
+    date: "Sep 2022 — Present",
+    title: "Microsoft",
+    sub: "Software Engineer",
+    points: [
+      "Building automated systems that detect security issues and orchestrate workflows across Azure Identity at global scale.",
+      "Implementing privacy-enhancing technologies to ensure compliance with applicable privacy laws and regulations.",
+    ],
+  },
+  {
+    date: "Nov 2020 — Feb 2021",
+    title: "Mobisy Technologies",
+    sub: "R&D Intern",
+    points: [
+      "Collected JSON data via web-scraping and open APIs, stored in an RDBMS.",
+      "Built an SKU classification system on top of the curated dataset.",
+    ],
+  },
+  {
+    date: "Sep 2019 — Oct 2019",
+    title: "Techskills IT Consultants",
+    sub: "Backend Developer",
+    points: [
+      "Developed RESTful backend services using the Spring Framework.",
+      "Wrote SQL / JPQL queries for data persistence with Spring Data JPA.",
+    ],
+  },
+  {
+    date: "Aug 2018 — Jan 2019",
+    title: "TechSkills IT Consultants",
+    sub: "Full-stack Developer Intern",
+    points: [
+      "Built a Meeting App handling end-to-end meeting data using Spring Boot + MVC.",
+      "Designed REST APIs and consumed them in the frontend.",
+    ],
+  },
+];
 
 export default function Experience() {
-  const items = [
-    {
-      date: "September 2022 - Present",
-      cardTitle: "Microsoft",
-      cardSubtitle: "Software Engineer",
-      cardDetailedText: [
-        "Developing automated systems that detect security issues and manage workflows across Azure Identity services on a global scale.",
-        "Implement privacy-enhancing technologies to ensure compliance with applicable privacy laws and regulations.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-    },
-    {
-      date: "November 2020 – February 2021",
-      cardTitle: "Mobisy Technologies",
-      cardSubtitle: "Research & Development Intern",
-      cardDetailedText: [
-        "Collected JSON data by web-scraping, using open API end points and storing it in a RDBMS.",
-        "Responsible for building SKU Classification system using the collected data.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-    },
-    {
-      date: "September 2019 – October 2019",
-      cardTitle: "Techskills IT Consultants",
-      cardSubtitle: "Backend Developer",
-      cardDetailedText: [
-        "Developed applications using Spring Framework for Backend Restful API’s.",
-        "Wrote SQL/JPQL queries for Data persistence using Spring Data JPA.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-    },
-    {
-      date: "August 2018 – January 2019",
-      cardTitle: "TechSkills IT Consultants",
-      cardSubtitle: "Fullstack Developer Intern",
-      cardDetailedText:
-        "Developed a Meeting App website which handles all the data that happens in a meeting. In this project I developed several REST API's using Spring Boot and used the MVC architecture. These API's are being consumed in the frontend.",
-    },
-  ];
-
   return (
-    <section id="experience" class="about background-alt">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
+    <section id="experience">
+      <div className="container">
+        <div className="section-head reveal">
+          <div className="eyebrow">02 — Where I've worked</div>
           <h2>Experience</h2>
+          <div className="underline" />
         </div>
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <VerticalTimeline className="custom-line">
-              {items.map((data, i) => {
-                return (
-                  <VerticalTimelineElement
-                    key={i}
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: "#343a40" }}
-                    date={data.date}
-                    dateClassName="timeline-date"
-                    contentArrowStyle={{
-                      borderRight: "7px solid  rgb(33, 150, 243)",
-                    }}
-                    iconStyle={{
-                      background: "#0563bb",
-                      color: "#fff",
-                    }}
-                    icon={<WorkIcon />}
-                  >
-                    <h3
-                      className="vertical-timeline-element-title"
-                      style={{
-                        fontSize: "14",
-                        color: "rgba(255, 255, 255, 0.8)",
-                      }}
-                    >
-                      {data.cardTitle}
-                    </h3>
-                    <h4
-                      className="vertical-timeline-element-subtitle"
-                      style={{
-                        fontSize: "1.2em",
-                        fontWeight: "350",
-                        color: "#7e8890",
-                      }}
-                    >
-                      {data.cardSubtitle}
-                    </h4>
-                    <p
-                      style={{
-                        fontSize: "1em",
-                        fontWeight: "350",
-                        color: "#74808a",
-                      }}
-                    >
-                      {data.cardDetailedText}
-                    </p>
-                  </VerticalTimelineElement>
-                );
-              })}
-            </VerticalTimeline>
-          </div>
+        <div className="timeline">
+          {items.map((it, i) => (
+            <div className="tl-item reveal" key={i}>
+              <div className="tl-dot" />
+              <div className="tl-card">
+                <div className="tl-date">{it.date}</div>
+                <h3>{it.title}</h3>
+                <div className="sub">{it.sub}</div>
+                <ul>
+                  {it.points.map((p, j) => (
+                    <li key={j}>{p}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
